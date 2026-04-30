@@ -7,9 +7,7 @@ using namespace std;
 int solution(vector<int> priorities, int location) {
     int answer = 0;
     
-    // 1. 일반 큐: {우선순위, 기존 위치}를 저장
     queue<pair<int, int>> q;
-    // 2. 우선순위 큐: 내림차순 정렬되어 항상 가장 높은 우선순위를 O(1)로 확인 가능
     priority_queue<int> pq; 
     
     for (int i = 0; i < priorities.size(); i++) {
